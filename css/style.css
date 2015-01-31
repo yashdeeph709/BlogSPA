@@ -1,0 +1,24 @@
+a:hover{
+	text-decoration: none !important;
+}
+.post{
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius: 10px;
+	border-color: #FFFF9D;
+	border-width: 1px;
+	background: #ffffaa;
+}
+.post-title{
+	font-size: 2.5em;
+	font-family: 'Lato', sans-serif;
+}
+.post-author{
+	font-size:1.8em;
+	font-family: content; 
+}
+.post-content{
+	font-size:2.8em;
+}
