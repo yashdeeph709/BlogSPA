@@ -42,7 +42,7 @@
 	</div>
 	<div class="col-md-8 post" ng-show="taggeds">
 	<ul ng-repeat="tagged in taggeds">
-	<li><h4>{{tagged.title}}</h4></li>
+	<li><a href="#" ng-click="showpost(tagged.postid)">{{tagged.title}}</a></li>
 	</ul>
 	</div>
 </div>

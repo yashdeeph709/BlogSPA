@@ -36,6 +36,7 @@ var app=angular.module('PostCollection',[]);
 
 	$scope.post=$scope.posts[0];
 	$scope.showpost=function (postid){
+		$scope.taggeds=null;
 		console.log(postid);
 		$scope.post=$scope.posts[postid-1];
 	};
