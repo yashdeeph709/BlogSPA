@@ -29,6 +29,7 @@
 		</tr>
 		<tr ng-repeat="tag in tags| filter:search_tags">
 			<td><a ng-href="#" ng-click="showtagged(tag)">{{tag}}</a></td>
+			<td>{{postCount(tag)}}</td>
 		</tr>
 	</table>
 	</div>

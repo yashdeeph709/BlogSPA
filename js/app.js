@@ -33,7 +33,20 @@ var app=angular.module('PostCollection',[]);
 	"tags":["node","html","bootstrap"]
 	}];
 	$scope.tags=["angular","node","css","html","js","bootstrap","express"];
-
+	$scope.postCount=function (tag){
+		var count=0;
+		for(i=0;i<$scope.posts.length;i++){
+		var tags=$scope.posts[i].tags;
+		console.log(tags);
+			for(j=0;j<tags.length;j++){
+				if(tags[j]==tag){
+				count++;
+				console.log($scope.posts[i]);
+				}
+			}
+		}
+		return count;
+	};
 	$scope.post=$scope.posts[0];
 	$scope.showpost=function (postid){
 		$scope.taggeds=null;
